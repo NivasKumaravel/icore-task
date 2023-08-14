@@ -4,6 +4,7 @@ import 'dart:convert';
 
 import '../utilits/colors & textstyle.dart';
 import 'Detail_Screen.dart';
+import 'ListModel.dart';
 
 
 class HomeScreen extends StatefulWidget {
@@ -16,7 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
   bool isLoading = false;
 
   // FETCH API LIST
-  Future<void> fetchPosts() async {
+  Future<ListModel?> fetchPosts() async {
     setState(() {
       isLoading = true;
     });
